@@ -7,11 +7,6 @@
 
 import Foundation
 
-
-// this is basically is escaping closure
-// we need to use this closure and use it in different places so that we use it a like a block of code we can use around
-
-
 class Networking {
     func response (with url: String  ,  completion: @escaping (Countries) -> ()) {
         guard let url = URL(string: url) else {
