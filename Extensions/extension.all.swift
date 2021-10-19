@@ -74,7 +74,6 @@ extension HomeViewController: UITableViewDataSource , UITableViewDelegate  {
         detailview.configure(with: countriesInProgress[indexPath.row])
         
         navigationController?.pushViewController(detailview, animated: true)
-        print(navigationController?.topViewController)
         
     }
 }

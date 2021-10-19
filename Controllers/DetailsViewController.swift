@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController , selfConfiguringViewController{
+class DetailsViewController: UIViewController , selfConfiguringViewController {
     let containerView: UIView  = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -101,8 +101,8 @@ class DetailsViewController: UIViewController , selfConfiguringViewController{
             
             containerView.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor , constant: 20),
             containerView.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor , constant: -20),
-            containerView.safeAreaLayoutGuide.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor , constant: 20),
-            containerView.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor , constant: -20),
+            containerView.safeAreaLayoutGuide.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor , constant: -20),
+            containerView.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor , constant: 20),
             
             
             
