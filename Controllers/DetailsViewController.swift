@@ -116,7 +116,7 @@ class DetailsViewController: UIViewController , selfConfiguringViewController{
         ])
         view.backgroundColor = .systemBackground
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: UIButton(type: .system))
-        navigationItem.title = "Afghanistan"
+
       
         
     }
@@ -128,6 +128,7 @@ class DetailsViewController: UIViewController , selfConfiguringViewController{
         TotalRecoveredLabel.text =  LocalizedString.totalRecovered.translated  +  ":  " +  String(country.TotalRecovered)
         TotalDeathsLabel.text =   LocalizedString.totalDeaths.translated  +  ":  " +  String(country.TotalDeaths)
         NewRecoveredLabel.text =   LocalizedString.newRecovered.translated  +  ":  " +  String(country.TotalRecovered)
+        self.navigationItem.title = country.Country
         
     }
    
