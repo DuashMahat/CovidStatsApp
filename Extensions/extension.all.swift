@@ -19,7 +19,7 @@ extension HomeViewController: UISearchResultsUpdating  {
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
         searchController.searchBar.placeholder = LocalizedString.navPlaceHolder.translated
-        searchController.obscuresBackgroundDuringPresentation = true
+        searchController.obscuresBackgroundDuringPresentation = false
         definesPresentationContext = true
     }
     
@@ -72,7 +72,9 @@ extension HomeViewController: UITableViewDataSource , UITableViewDelegate  {
         let detailview = DetailsViewController()
         let countriesInProgress = isBeingSearched == true ? viewModel.filteredCountries: viewModel.countries
         detailview.configure(with: countriesInProgress[indexPath.row])
+        
         navigationController?.pushViewController(detailview, animated: true)
+        print(navigationController?.topViewController)
         
     }
 }
